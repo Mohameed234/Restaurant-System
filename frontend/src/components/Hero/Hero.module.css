@@ -1,0 +1,61 @@
+.heroSection {
+    background: url('../../assets/hero.png') no-repeat center/cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+    
+    
+    .contentBox {
+    max-width: 600px;
+}
+
+    .contentBox h1{
+    font-size: 90px;
+}
+    .contentBox p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+    
+    
+    .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+    
+    
+    .primary {
+    background: #b91c1c;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.primary:hover{
+    color: white;
+}
+    
+    
+    .secondary {
+    background: white;
+    border: 1px solid #333;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.secondary:hover{
+    color: black;
+}
+   

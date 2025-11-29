@@ -1,0 +1,87 @@
+.container {
+    text-align: center;
+    /* padding: 60px 20px; */
+    font-family: "Georgia", serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .title {
+    font-size: 52px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+    color: #555;
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+  
+  .formWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    background: #fff;
+    padding: 40px;
+    width: 650px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    border-radius: 12px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .inputGroup input,
+  .inputGroup select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 14px;
+    background: #b52829;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    background: #991c1d;
+  }
+  
+  .map {
+    width: 100%;
+    height: 450px;
+    margin-top: -180px;
+    z-index: 1;
+  }
+  

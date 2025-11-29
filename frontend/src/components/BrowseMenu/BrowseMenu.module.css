@@ -1,0 +1,90 @@
+.section {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding: 0 80px;
+    }
+    
+    .section h2{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    }
+    
+    
+    .card {
+    background-color: #ffffff;
+    border: 1px solid #dfe0d6;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    padding: 40px 25px;
+    max-width: 260px;
+    max-height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    }
+    
+    
+    .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    
+    .iconCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f4f4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px auto;
+    }
+    
+    
+    .iconCircle img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    }
+    
+    
+    .card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    }
+    
+    
+    .card p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500;
+    }
+    
+    
+    .exploreLink {
+    color: #b91c1c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+    }
+    
+    
+    .exploreLink:hover {
+    color: #7f1d1d;
+    }

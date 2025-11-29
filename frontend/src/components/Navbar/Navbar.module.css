@@ -1,0 +1,364 @@
+.navbarContainer {
+    background: #fff;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+/* Top bar */
+.navbarTop {
+    background: #474747;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarTopLeft, .navbarTopRight {
+    display: flex;
+    gap: 20px;
+}
+
+.navbarTopLeft div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbarTopRight a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #565555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main navbar */
+.navbar {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.active {
+    background-color: #DBDFD0;
+}
+
+/* Buttons */
+.bookButton {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #000;
+}
+
+.bookButton:hover {
+    background: #b91c1c;
+    color: #fff;
+    border-color: #b91c1c;
+}
+
+.authButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.loginBtn, .registerBtn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.loginBtn:hover, .registerBtn:hover {
+    background: black;
+    color: white;
+}
+
+/* User Section */
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.cartIcon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.cartSlider {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatarWrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown a, .dropdown button {
+    padding: 10px 15px;
+    text-align: left;
+    background: none;
+    border: none;
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+.dropdown a:hover, .dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+
+.cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.closeCart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.closeCart:hover {
+    color: #b91c1c; /* نفس لون hover للـ Book a Table */
+}
+
+ul{
+    list-style: none;
+}
+
+.authButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.loginBtn, .registerBtn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.loginBtn:hover, .registerBtn:hover {
+    background: black;
+    color: white;
+}
+
+
+
+.cartSlider {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 320px;
+    max-height: 500px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .cartList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cartItemImage {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .cartItemInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cartItemName {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .cartItemPrice {
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  
+  .quantityControls button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* يضمن أن + و - في المنتصف */
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .removeBtn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .removeBtn:hover {
+    color: #ff6b6b;
+    transform: scale(1.2);
+  }
+  
+  .cartFooter {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .checkoutBtn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #b91c1c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .checkoutBtn:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+    color: #fff;
+  }
+
+
+  .cartIconWrapper {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cartIconWrapper img {
+    width: 32px; /* حجم الكارت أيقون */
+    height: 32px;
+  }
+  
+  .cartBadge {
+    position: absolute;
+    top: 30px;
+    right: 12px;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+  }
+  
+  
+  

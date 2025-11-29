@@ -1,0 +1,194 @@
+.orderAppsContainer {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+    
+    
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+    
+  }
+  
+  /* القسم النصي على اليسار */
+  .textSection {
+    padding-top: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* قسم التطبيقات على اليمين */
+  .appsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .appGroup {
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 25px 0;
+    width: 100%;
+  }
+  
+  .appsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+  
+  .appItem {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #e0e0e034;
+  }
+  
+  
+  
+  /* تصميم متجاوب للشاشات المتوسطة */
+  @media (max-width: 1024px) {
+    .content {
+      gap: 60px;
+    }
+    
+    .title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* تصميم متجاوب للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .orderAppsContainer {
+      padding: 60px 20px;
+    }
+    
+    .content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .textSection {
+      text-align: center;
+      padding-top: 0;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
+    
+    .appsRow {
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .appItem {
+      flex: none;
+      min-width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .orderAppsContainer {
+      padding: 40px 15px;
+    }
+    
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    .appsRow {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .appItem {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+
+
+
+  .appsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .appItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  .appIcon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .appName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .appsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appsGrid {
+      grid-template-columns: 1fr;
+    }
+  }

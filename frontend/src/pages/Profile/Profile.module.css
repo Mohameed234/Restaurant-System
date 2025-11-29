@@ -1,0 +1,297 @@
+.profileContainer {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+    margin-bottom: 15px;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .input {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.2s;
+  }
+  
+  .input:focus {
+    border-color: #b91c1c;
+    outline: none;
+  }
+  
+  .updateBtn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #b91c1c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .updateBtn:hover {
+    background-color: #9f1616;
+  }
+  
+  .logoutBtn {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: #b91c1c;
+    font-weight: bold;
+    border: 1px solid #b91c1c;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .logoutBtn:hover {
+    background-color: #ffe5e5;
+  }
+
+
+  .profileContainer {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .updateBtn {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #b91c1c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .updateBtn:hover {
+    background-color: #9f1616;
+  }
+  
+  .logoutBtn {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .logoutBtn:hover {
+    background-color: #333;
+  }
+  
+  .message {
+    color: green;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .bookingsSection {
+    margin-top: 40px;
+  }
+  
+  .bookingsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .bookingsTable th, .bookingsTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .bookingsTable th {
+    background-color: #f2f2f2;
+  }
+
+
+  .profileContainer {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .message {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    background: #4caf50;
+    border-radius: 6px;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .form {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  
+  .input {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .updateBtn, .logoutBtn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  .updateBtn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .updateBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .logoutBtn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .section {
+    margin-top: 2rem;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+  }
+  
+  .table th, .table td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .table ul {
+    padding-left: 1rem;
+    margin: 0;
+  }
+  
+  .table li {
+    list-style-type: disc;
+  }
+  
+  
+  

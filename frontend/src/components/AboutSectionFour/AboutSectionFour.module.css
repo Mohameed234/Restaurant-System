@@ -1,0 +1,58 @@
+:global(.sectionFour){padding:60px 0;background:#fff;display:flex;flex-direction:column;align-items:center;}
+
+.title{font-size:42px;font-weight:600;color:#2e2e2e;margin-bottom:60px;text-align:center;letter-spacing:-0.5px;}
+
+.cardsContainer{display: flex; gap: 25px; padding: 0 80px; margin-bottom: 100px;}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;width:100%;max-width:1200px;}
+
+.card{background:#fafafa;border-radius:12px;padding:40px 32px;box-shadow:0 4px 20px rgba(0,0,0,0.05);border:1px solid #f1f1f1;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease,box-shadow .2s ease;}
+
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+
+.quote{font-size:18px;color:#9e2b2b;font-weight:600;margin-bottom:20px;line-height:1.4;}
+
+.description{font-size:15px;color:#4d4d4d;line-height:1.6;margin-bottom:32px;}
+
+.divider{height:1px;background:#e6e6e6;margin-bottom:24px;}
+
+.user{display:flex;align-items:center;gap:14px;}
+
+.user img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
+
+.userInfo{display:flex;flex-direction:column;}
+
+.userName{font-size:15px;font-weight:600;color:#2e2e2e;margin-bottom:4px;}
+
+.userLocation{font-size:13px;color:#777;}
+
+.profile{
+  display: flex;
+  gap: 20px;
+  
+
+}
+.profile img{
+  width: 70px;
+  height: 70px;
+}
+.profile div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.profile div h4 ,.profile div p{
+  margin: 0;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #cdcdcd7c;
+  margin: 20px 0;
+  
+
+}
